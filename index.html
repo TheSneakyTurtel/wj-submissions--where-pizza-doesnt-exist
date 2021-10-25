@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Where Pizza Doesn't Exist</title>
+
+    <link type="text/css" rel="stylesheet" href="CSS/stylesheet.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/environement.css" />
+
+    <script type="text/javascript" crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script type="module" src="JS/main-script.js"></script>
+    <script type="text/javascript" src="JS/load.js"></script>
+</head>
+
+<body>
+    <loading-screen style="z-index: 999999; font-family: 'Calibri', 'Segoe UI', sans-serif; text-align: center; position: fixed">
+        <p style="font-size: calc(1rem + 1.1vw); font-family: inherit; position: fixed; width: 100%; top: calc(50% - calc(1rem + 1.1vw))">Please wait while the site loads up</p>
+        <p style="font-size: calc(0.8rem + 0.98vw); font-family: inherit; opacity: 0.5; position: fixed; width: 100%; top: calc(50% + calc(1rem + 1.1vw))">this may take several seconds...</p>
+    </loading-screen>
+    <interaction-screen style="z-index: 999999; font-family: 'Calibri', 'Segoe UI', sans-serif; text-align: center; display: none; position: fixed">
+        <p style="font-size: calc(1rem + 1.1vw); font-family: inherit; position: fixed; width: 100%; top: 50%">Click anywhere or press any key to continue</p>
+    </interaction-screen>
+    <content-wrapper style="display: none">
+        <environment>
+            <section class="rocks">
+                <img class="rock-1" style="z-index: 25" src="Images/Rocks/Rock 1.png" />
+                <img class="rock-2" style="z-index: 20" src="Images/Rocks/Rock 2.png" />
+            </section>
+            <section class="lava-layers">
+                <particles-container id="lava-particles" style="z-index: 10"></particles-container>
+                <img class="lava-1" style="z-index: 18" src="Images/Lava Layers/Lava 1.png" />
+                <img class="lava-2" style="z-index: 16" src="Images/Lava Layers/Lava 2.png" />
+                <canvas class="bg-music-equalizer" style="z-index: 15"></canvas>
+                <img class="lava-3" style="z-index: 14" src="Images/Lava Layers/Lava 3.png" />
+            </section>
+            <section class="structures">
+                <img class="structure-1" style="z-index: 5" src="Images/Structures/Structure 1.png" />
+                <img class="structure-2" style="z-index: -5" src="Images/Structures/Structure 2.png" />
+            </section>
+            <img class="bg" style="z-index: -10" src="Images/BG.png" />
+        </environment>
+        <info>
+            <h1 class="title">Where Pizza Doesn't Exist</h1>
+            <p class="summary">A story about a robot surviving in a horrible world where pizza doesn't exist, trying to find out how it all happened</p>
+            <p class="date-note">Coming on April 1st, 2056</p>
+            <input type="button" class="get-notified" value="Get notified on release" />
+        </info>
+    </content-wrapper>
+</body>
+
+</html>

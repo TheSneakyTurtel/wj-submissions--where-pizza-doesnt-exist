@@ -1,0 +1,35 @@
+/* The style of all of the environment */
+
+particles-container {
+    display: block;
+}
+
+environment * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+environment .rocks *,
+environment .lava-layers * {
+    top: auto;
+    bottom: 0;
+}
+
+environment .lava-layers .lava-1 {
+    height: 100%;
+    transform: none;
+}
+
+environment .lava-layers .lava-2 {
+    height: 90%;
+    transform: none;
+}
+
+environment .lava-layers .lava-3 {
+    height: 80%;
+    transform: none;
+}
